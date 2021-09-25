@@ -29,7 +29,7 @@ class Convertion:
 
     def choix_verif(self):
         # vérifie si son choix est correcte
-        try :
+        try:
             self.choix = int(self.choix)
         except:
             print("Aie tu t'ai tromper")
