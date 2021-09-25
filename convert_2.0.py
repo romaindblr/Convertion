@@ -18,16 +18,22 @@ class Convertion:
 
     def start_choix(self):
         # savoir ce qu'elle est son unité de départ
+        print("§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§")
         print("Qu'elle est ton unité de départ :")
         print("1 = décimal")
         print("2 = binaire")
         print("3 = hexadécimal")
         print("4 = octal")
-        self.choix = int(input("Fait ton choix : "))
+        self.choix = input("Fait ton choix : ")
         self.choix_verif()
 
     def choix_verif(self):
         # vérifie si son choix est correcte
+        try :
+            self.choix = int(self.choix)
+        except:
+            print("Aie tu t'ai tromper")
+            self.start_choix()
         if self.choix == 1 or self.choix == 2 or self.choix == 3 or self.choix == 4:
             # choix correcte
             self.start_convertion()
@@ -84,6 +90,7 @@ class Convertion:
     def Continue(self):
         # savoir si il veut convertire d'autre chiffre
         try:
+            print("§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§")
             print("Veut-tu continuer à convertire des chiffres ?")
             self.cont = int(input("1 = oui ; 2 = non : "))
         except:
@@ -91,9 +98,10 @@ class Convertion:
             self.Continue()
         if self.cont == 1:
             print("§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§")
-            print("§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§")
             self.start_choix()
         elif self.cont == 2:
+            print("§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§")
+            print("§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§")
             print("Au revoir !!")
             exit()
         else:
