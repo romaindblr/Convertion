@@ -45,7 +45,7 @@ class Convertion:
     def start_convertion(self):
         # demande le chiffre qu'il veut convertire
         print("§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§")
-        self.chiffre_start = input("Quels chiffre veut-tu convertir ? ")
+        self.chiffre_start = input("Quels chiffre veux-tu convertir ? ")
         self.converte_chiffre()
         self.resultat_decimal = self.convertion(int, 1)
         self.resultat_binaire = self.convertion(bin, 2)
