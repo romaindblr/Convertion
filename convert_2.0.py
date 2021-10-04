@@ -91,7 +91,7 @@ class Convertion:
         # savoir si il veut convertire d'autre chiffre
         try:
             print("§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§")
-            print("Veut-tu continuer à convertire des chiffres ?")
+            print("Veux-tu continuer à convertire des chiffres ?")
             self.cont = int(input("1 = oui ; 2 = non : "))
         except:
             print("Aie ceci n'est pas un 1 ou un 2 !!")
