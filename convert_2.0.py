@@ -19,7 +19,7 @@ class Convertion:
     def start_choix(self):
         # savoir ce qu'elle est son unité de départ
         print("§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§")
-        print("Qu'elle est ton unité de départ :")
+        print("Quelle est ton unité de départ :")
         print("1 = décimal")
         print("2 = binaire")
         print("3 = hexadécimal")
